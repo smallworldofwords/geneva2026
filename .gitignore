@@ -1,0 +1,6 @@
+# Source/planning documents (not part of the website)
+*.md
+SWOW Logo/
+
+# Claude Code settings
+.claude/
