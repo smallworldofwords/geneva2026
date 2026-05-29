@@ -114,13 +114,21 @@ ul { list-style: none; }
 
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
-  background: var(--navy);
+   position: relative;
+   background: var(--navy);
+      linear-gradient(rgba(12, 18, 32, 0.72), rgba(12, 18, 32, 0.72)),
+      url("assets/geneva-banner.jpg") center/cover no-repeat;
   color: var(--white);
-  padding: 5rem 1.5rem 4.5rem;
+  padding: 6rem 1.5rem 5.5rem;
   text-align: center;
 }
 
-.hero-inner { max-width: 720px; margin-inline: auto; }
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin-inline: auto;
+}
 
 .hero-logo {
   height: 52px;
@@ -213,13 +221,27 @@ ul { list-style: none; }
 /* ── About ───────────────────────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
   gap: 3rem;
   align-items: start;
   margin-top: 2rem;
 }
 
 .about-text p { margin-bottom: 1rem; font-size: 1.05rem; }
+
+.about-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.image-credit {
+  margin-top: .45rem;
+  font-size: .78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
 
 /* Stats as a bordered column — no rounded corners */
 .about-stats {
@@ -255,9 +277,18 @@ ul { list-style: none; }
 }
 
 @media (max-width: 640px) {
-  .about-grid  { grid-template-columns: 1fr; }
-  .about-stats { flex-direction: row; }
-  .stat + .stat { border-top: none; border-left: 1px solid var(--border); }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    flex-direction: row;
+  }
+
+  .stat + .stat {
+    border-top: none;
+    border-left: 1px solid var(--border);
+  }
 }
 
 /* ── Program ─────────────────────────────────────────────── */
