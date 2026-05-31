@@ -10,6 +10,10 @@ Date: 2026-05-31
 - Replaced static in-person/virtual team blocks with flexible wording, then restored explicit current team lists under a disclaimer.
 - Added lightweight styling for the current team lists block.
 - Updated source program text disclaimer to match website language.
+- Renamed workshop branding to SWOWXL-2026 in page title, navbar, hero, and footer.
+- Updated hero structure to show a clear main title plus explanatory subtitle.
+- Added hero note for the optional pre-workshop dinner on September 28, 2026.
+- Updated the registration button to the new Google Form URL.
 
 ## Files updated
 
