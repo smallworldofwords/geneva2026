@@ -26,3 +26,16 @@ Date: 2026-05-31
 ## Notes
 
 - `changes.md` is for repository tracking and is not linked from the website.
+
+## Update: 2026-05-31 (Afternoon timing revision)
+
+- Added a 5-minute gap between the Welcome/Outline segment and the Advertising talk sequence by introducing a short break after the welcome block.
+- Shifted afternoon session timings forward accordingly:
+	- Welcome and Afternoon Outline: 14:30-14:55
+	- Short Break: 14:55-15:00
+	- Sign Language Word Associations: 15:00-15:40
+	- Big Team Science: 15:40-16:20
+	- Advertising, Social Media, and Outreach: 16:20-16:50
+	- Closing Remarks: 16:50-17:05
+- Updated the displayed afternoon session window to 14:30-17:05.
+- Updated timezone table afternoon ranges to match the new 17:05 end time equivalent across regions.

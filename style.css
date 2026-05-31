@@ -235,6 +235,12 @@ ul { list-style: none; }
 
 .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
+.hero-disclaimer {
+  margin-top: 1.15rem;
+  font-size: .82rem;
+  color: rgba(255,255,255,.72);
+}
+
 /* ── Buttons ─────────────────────────────────────────────── */
 .btn {
   display: inline-block;
