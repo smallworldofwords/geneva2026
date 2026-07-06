@@ -128,41 +128,13 @@ ul { list-style: none; }
 
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(145deg, #1b2b4b 0%, #17233c 58%, #111a2d 100%);
+   position: relative;
+   background: var(--navy);
+      linear-gradient(rgba(12, 18, 32, 0.72), rgba(12, 18, 32, 0.72)),
+      url("assets/geneva-banner.jpg") center/cover no-repeat;
   color: var(--white);
-  padding: 5rem 1.5rem 4.5rem;
+  padding: 6rem 1.5rem 5.5rem;
   text-align: center;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('assets/geneva_network.svg');
-  background-repeat: no-repeat;
-  background-position: center 8%;
-  background-size: auto 112%;
-  opacity: .42;
-  mix-blend-mode: screen;
-  pointer-events: none;
-}
-
-@media (max-width: 900px) {
-  .hero::before {
-    background-size: auto 120%;
-    background-position: center 10%;
-  }
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 18% 22%, rgba(255,255,255,.16), transparent 45%),
-              linear-gradient(180deg, rgba(9,16,32,.08) 0%, rgba(9,16,32,.30) 100%);
-  pointer-events: none;
 }
 
 .hero-inner {
@@ -294,13 +266,27 @@ ul { list-style: none; }
 /* ── About ───────────────────────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
   gap: 3rem;
   align-items: start;
   margin-top: 2rem;
 }
 
 .about-text p { margin-bottom: 1rem; font-size: 1.05rem; }
+
+.about-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.image-credit {
+  margin-top: .45rem;
+  font-size: .78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
 
 /* Stats as a bordered column — no rounded corners */
 .about-stats {
@@ -336,9 +322,18 @@ ul { list-style: none; }
 }
 
 @media (max-width: 640px) {
-  .about-grid  { grid-template-columns: 1fr; }
-  .about-stats { flex-direction: row; }
-  .stat + .stat { border-top: none; border-left: 1px solid var(--border); }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    flex-direction: row;
+  }
+
+  .stat + .stat {
+    border-top: none;
+    border-left: 1px solid var(--border);
+  }
 }
 
 /* ── Program ─────────────────────────────────────────────── */
